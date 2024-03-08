@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Prd from './store/Prd';
+// import Prd from './store/Prd';
+import Page from './lang/Page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Prd />
+    <Page />
   </React.StrictMode>
 );
 

@@ -30,22 +30,19 @@ export default function Prd()
         e.preventDefault();
         const srValue = document.querySelector("#sr").value;
         const cat_s = document.querySelector("#df").value;
+        console.log(cat_s);
         setS(cat_s);
         setDaf(srValue);
     }
     const ft_showdata = () => {
-        const cat = cay.filter ( p =>
-            {
-                return p == s
-            })
-        console.log(cat)
+
         const product = data.filter ( p =>
         {
-            return (p.title.includes(daf)
+            return ( s && ( p.title.includes(daf)
                 || p.id.toString().includes(daf)
-                || p.description.includes(daf))
+                || p.description.includes(daf)))
         })
-        if(product.length > 0 && cat)
+        if(product.length > 0)
         {
             return product.map((prd,key) => {
                 return <Tdata product = {prd} key = {key} / > })
