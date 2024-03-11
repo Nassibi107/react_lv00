@@ -5,13 +5,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import Prd from './store/Prd';
 // import Page from './lang/Page';
-// import FormV from './formValid/FormV';
+
 import FormVM from './formValid/FormVM';
+import LayoutS from './LayoutS';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormVM />
+   <App/>
   </React.StrictMode>
 );
 

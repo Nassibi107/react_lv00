@@ -2,7 +2,7 @@ import { useState } from "react";
 import Lang from "./Lang";
 
 
-export default  function Page() {
+export default  function Pagea() {
    const [langs,setLangs] = useState("EN")
    const show_me = () =>
    {
