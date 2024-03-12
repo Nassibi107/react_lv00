@@ -9,11 +9,12 @@ import reportWebVitals from './reportWebVitals';
 import FormVM from './formValid/FormVM';
 import LayoutS from './LayoutS';
 import App from './App';
+import Context from './useContext/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <App/>
+   <Context/>
   </React.StrictMode>
 );
 
